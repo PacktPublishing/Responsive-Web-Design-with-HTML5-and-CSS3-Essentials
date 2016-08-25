@@ -1,0 +1,13 @@
+#orchid { 
+  background-image: url('../img/mothorchid.png'); 
+  height: 24.31rem;
+  width: 36.5rem;
+} 
+
+@media (min-resolution: 120dpi) { 
+  #orchid { 
+    background-image: url('../img/mothorchid@2x.png'); 
+    height: 24.31rem;
+    width: 36.5rem;
+  } 
+}

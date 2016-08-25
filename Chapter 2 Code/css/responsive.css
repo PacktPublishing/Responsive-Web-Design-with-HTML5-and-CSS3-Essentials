@@ -1,0 +1,21 @@
+body {
+  background-color: #d6cb8b;
+  font-family: 'Lato', sans-serif;
+  max-width: 960px;
+  min-width: 380px;
+}
+
+section {
+  width: 56.77%;
+  border: 1px solid black;
+  margin-left: 40%;
+  padding: 0.5rem;
+}
+
+aside {
+  width: 33.23%;
+  border: 1px solid black; 
+  float: left;
+  position: absolute;
+  padding: 0.5rem;
+}

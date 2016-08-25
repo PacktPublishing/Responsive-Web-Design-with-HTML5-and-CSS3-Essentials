@@ -1,0 +1,97 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  background: #fbf6f4;
+  text-shadow: 0 0.0625rem 0 rgba(255,255,255,.5);
+}
+
+header, section, footer {
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
+  border-top: 0.0625rem solid #fff;
+}
+
+header {
+  border-bottom: 0.0625rem solid #eee;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  padding: 30px 0;
+}
+
+h1 a {
+  font-weight: 700;
+  letter-spacing: -.05em;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: all .2s ease-in-out;
+  color: #333;
+  border-bottom: none;
+}
+
+p, pre {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+p {
+  margin: 0;
+}
+
+pre {
+  background: #fbd3b6;
+  color: #333;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  transition: all .2s ease-in-out;
+}
+
+pre:hover {
+  background: #d3856b;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+.unit .grid {
+  overflow: hidden;
+  background: rgba(241,227,213,.5);
+  transition: all .25s ease-in-out;
+}
+
+.unit .grid:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.unit .grid:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+
+/* Media queries */
+
+@media (min-width: 960px){
+  h1 {
+    font-size: 5em;
+  }
+}

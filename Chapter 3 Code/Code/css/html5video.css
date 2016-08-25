@@ -1,0 +1,5 @@
+video {
+   max-width: 100%;
+   /* just in case, to force correct aspect ratio */
+   height: auto !important;
+}

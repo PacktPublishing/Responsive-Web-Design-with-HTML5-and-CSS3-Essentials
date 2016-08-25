@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'pt_sans_captionregular';
+  src: url('../font/PTC55F-webfont.eot');
+  src: url('../font/PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/PTC55F-webfont.woff') format('woff'),
+       url('../font/PTC55F-webfont.ttf') format('truetype'),
+       url('../font/PTC55F-webfont.svg#pt_sans_captionregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { font-family: 'pt_sans_captionregular', arial; font-size: 1.2rem; }
+
+#container { margin: 0 auto; padding: 5px; max-width: 40rem; }
+
+.google-maps { position: relative; padding-bottom: 60%; height: 0; overflow: hidden; }
+.google-maps iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }     

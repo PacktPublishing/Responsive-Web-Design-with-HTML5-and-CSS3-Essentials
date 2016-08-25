@@ -1,0 +1,164 @@
+body {
+  color: #404040;
+  font: 100 1em/150% "Lato", sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(51, 153, 204, 0.2);
+}
+
+.img-placeholder {
+  background-image: url("http://placehold.it/200x150/CC99CC/ffffff&text=Feature");
+  background-size: cover;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+/*Basic Grid Styles*/
+.Grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Demo {
+  padding: .8em 1em 0;
+  margin-bottom: 1em;
+  background: rgba(251, 211, 182, 0.2);
+  transition: background-color 0.3s ease;
+  border: 1px solid #d3856b;
+  border-radius: 3px;
+}
+
+.Demo:after {
+  content: "";
+  display: block;
+  margin-top: .8em;
+  height: 1px;
+}
+
+/* With gutters*/
+.Gutters {
+  margin-left: -1em;
+}
+
+.Gutters .Grid-cell {
+  padding-left: 1em;
+}
+.Gutters .Grid--nested .Grid-cell:first-of-type .Demo {
+  margin-right: 1em;
+}
+
+.nav {
+  list-style: none;
+  background: rgba(102, 51, 255, 0.1);
+  margin: 0 0 1em;
+  border: 1px solid #33cccc;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #333;
+}
+
+.nav a:hover {
+  background: rgba(64, 0, 255, 0.1);
+  border-radius: 3px;
+}
+
+.nav:hover {
+  background: rgba(102, 51, 255, 0.25);
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav li:last-of-type a {
+    border-bottom: none;
+  }
+}
+/*===========================================*/
+/* Base classes for all media - Mobile first */
+.Grid--Holy-grail .aside, .Grid--Holy-grail .main {
+  flex: 1 100%;
+}
+
+/* One of -- columns*/
+.Grid--fit > .Grid-cell {
+  flex: 1;
+}
+
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+/* Tablet (medium) screens */
+@media (min-width: 30em) {
+  .Grid--Holy-grail .aside {
+    flex: 1 calc(25% - 1em);
+  }
+}
+
+/* Large screens */
+@media (min-width: 48em) {
+  .Grid--Holy-grail .main {
+    flex: 2;
+  }
+
+  .Grid--Holy-grail .aside {
+    flex: 1;
+  }
+
+  .Grid--Holy-grail .aside-1 {
+    order: 1;
+  }
+
+  .Grid--Holy-grail .main {
+    order: 2;
+  }
+
+  .Grid--Holy-grail .aside-2 {
+    order: 3;
+  }
+
+  .Gutters.Grid--nested .Grid-cell:first-of-type .Demo {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+	background-color: #F3ECDD;
+	text-align: center;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  min-width: 33%;
+}
+
+.box {
+	width: 100%;
+	background: #905f20;
+	border-radius: 0.625em;
+	margin: 0;
+}
+
+.box2{
+	min-width: 100%;
+	background: #6b8e6f;
+	border-radius: 0.625rem;
+	float: left;
+}
+
+h3:after{
+	content: ' is less than 30rem';
+}
+
+@media screen and (min-width: 30rem) {
+  body {
+  	background-color: #C7B47C;
+  }
+
+  .box {
+  	width: 49.5%;
+  	float: left;
+  }
+
+  .box + .box {
+    margin-left: 1%;
+    margin-bottom: 0.625em;
+  }
+
+  h3:after{
+		content: ' is greater than 30rem';
+	}
+} 

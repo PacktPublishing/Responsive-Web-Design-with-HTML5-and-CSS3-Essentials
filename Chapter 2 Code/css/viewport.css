@@ -1,0 +1,13 @@
+body {
+  background-color: #d6cb8b;
+  font-family: 'Lato', sans-serif;
+}
+
+
+#content {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  background-color: #ffffff;
+  padding: 0.3125rem;
+  border-radius: 0.25rem;
+}

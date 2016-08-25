@@ -1,0 +1,17 @@
+.video-box-wrapper {
+  padding-bottom: 56.25%;  /* to maintain 16:9 aspect ratio */
+  height: 0;
+  position: relative;
+  padding-top: 1.875rem;
+  overflow: hidden;
+}
+
+.video-box-wrapper iframe, 
+.video-box-wrapper object, 
+.video-box-wrapper embed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

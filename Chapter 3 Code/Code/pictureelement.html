@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding responsive images with the <picture> element</title>
+<!--<link rel="stylesheet" type="text/css" href="css/pictureelement.css">-->
+</head>
+<body>
+  <picture>
+    <source media="(min-width: 800px)" sizes="(max-width: 1000px) 100vw" srcset="img/high-res-image.png 738w">
+    <source media="(max-width: 799px)" sizes="(max-width: 600px) 100vw" srcset="img/med-res-image.png 738w">
+    <img src="img/fallback-image.png" alt="Human">
+  </picture>
+</body>
+</html>
